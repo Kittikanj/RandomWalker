@@ -23,8 +23,10 @@ class Walker:
     return x, y
 w = Walker.walk(n)
 x1, y1 = w
+
 plt.title("Random Walk ($n = " + str(n) + "$ steps)")
 plt.plot(x1, y1)
 plt.show()
+print('Hello from Ice')
   
   
