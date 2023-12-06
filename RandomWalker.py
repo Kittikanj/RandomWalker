@@ -22,6 +22,7 @@ class Walker:
         y[i] = y[i-1]-1
     return x, y
 w = Walker.walk(n)
+print("Hello");
 x1, y1 = w
 plt.title("Random Walk ($n = " + str(n) + "$ steps)")
 plt.plot(x1, y1)
