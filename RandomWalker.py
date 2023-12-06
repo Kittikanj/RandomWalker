@@ -1,7 +1,9 @@
 import matplotlib.pyplot as plt
+
 import random as rn
 import numpy as np
 n = 10000
+
 class Walker:
   def walk(n):
     x = np.zeros(n)
@@ -20,8 +22,11 @@ class Walker:
       else :
         x[i] = x[i-1]
         y[i] = y[i-1]-1
+    
     return x, y
+
 w = Walker.walk(n)
+print("Hello");
 x1, y1 = w
 
 plt.title("Random Walk ($n = " + str(n) + "$ steps)")
